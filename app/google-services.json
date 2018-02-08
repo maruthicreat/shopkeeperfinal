@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "988450907717",
+    "firebase_url": "https://shopkeeperapp-7d95b.firebaseio.com",
+    "project_id": "shopkeeperapp-7d95b",
+    "storage_bucket": "shopkeeperapp-7d95b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:988450907717:android:f425697099a14cee",
+        "android_client_info": {
+          "package_name": "com.example.maruthiraja.shopkeeperapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "988450907717-n7pksuc29a63tpdp7obgov8c1dd7nc9i.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.maruthiraja.shopkeeperapp",
+            "certificate_hash": "1c1c931ea8213506632e206c903fd8fbabb5c441"
+          }
+        },
+        {
+          "client_id": "988450907717-p90onrb1crsohvhbm1ugft4241bkn41n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCFEGIO8YGOWCrmGt9G6AhxHyN8NDAovyg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "988450907717-p90onrb1crsohvhbm1ugft4241bkn41n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
