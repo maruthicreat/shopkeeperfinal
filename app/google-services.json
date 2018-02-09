@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "988450907717-7kph5dg66t0fp43f04ro8qk4qbd8l60a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.maruthiraja.shopkeeperapp",
+            "certificate_hash": "9bf0ed489d1babb86f778c1342cf2541a59ada6a"
+          }
+        },
+        {
           "client_id": "988450907717-n7pksuc29a63tpdp7obgov8c1dd7nc9i.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {

@@ -8,7 +8,7 @@
     tools:context="com.example.maruthiraja.shopkeeperapp.ShopkeeperSignup">
 
     <EditText
-        android:id="@+id/vanniya"
+        android:id="@+id/shop_name"
         android:layout_width="357dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
@@ -17,12 +17,12 @@
         android:ems="10"
         android:hint="SHOP NAME"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/mapbutton"
+        app:layout_constraintBottom_toTopOf="@+id/shop_type"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/mapbutton"
+        android:id="@+id/shop_type"
         android:layout_width="357dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="180dp"
@@ -37,18 +37,17 @@
 
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/map_button"
         android:layout_width="106dp"
         android:layout_height="100dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="36dp"
         android:layout_marginTop="8dp"
         android:background="@android:drawable/ic_menu_mapmode"
-        android:text="@string/map"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/emailid"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/mapbutton" />
+        app:layout_constraintTop_toBottomOf="@+id/shop_type" />
 
     <TextView
         android:id="@+id/maptext"
@@ -64,16 +63,16 @@
         android:textSize="14sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/emailid"
-        app:layout_constraintEnd_toStartOf="@+id/button5"
+        app:layout_constraintEnd_toStartOf="@+id/map_button"
         app:layout_constraintHorizontal_bias="0.595"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/mapbutton" />
+        app:layout_constraintTop_toBottomOf="@+id/shop_type" />
 
     <EditText
         android:id="@+id/password"
         android:layout_width="357dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="36dp"
+        android:layout_marginBottom="32dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:ems="10"
@@ -87,7 +86,7 @@
         android:id="@+id/retypepass"
         android:layout_width="357dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="32dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:ems="10"
@@ -116,20 +115,21 @@
 
     <Button
         android:id="@+id/subutton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:layout_marginEnd="8dp"
+        android:layout_width="423dp"
+        android:layout_height="67dp"
         android:layout_marginStart="8dp"
+        android:background="@android:color/black"
+        android:onClick="storeUserData"
         android:text="submit"
+        android:textColor="@android:color/background_light"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textView4"
-        android:layout_width="305dp"
-        android:layout_height="45dp"
+        android:layout_width="455dp"
+        android:layout_height="55dp"
         android:layout_marginBottom="32dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
@@ -140,10 +140,11 @@
         android:textColor="@android:color/white"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/vanniya"
+        app:layout_constraintBottom_toTopOf="@+id/shop_name"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
 
 </android.support.constraint.ConstraintLayout>
