@@ -21,7 +21,7 @@ public class ShopkeeperSignup extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_shopkeeper_signup);
-        repass = (EditText)findViewById(R.id.);
+        repass = (EditText)findViewById(R.id.mapbutton);
         progressDialog = new ProgressDialog(this);
         firebaseAuth = FirebaseAuth.getInstance();
         mDatabase = FirebaseDatabase.getInstance().getReference("ShopkeeperSignup");
