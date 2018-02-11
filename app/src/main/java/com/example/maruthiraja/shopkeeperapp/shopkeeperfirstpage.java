@@ -14,8 +14,12 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.TextView;
 
+import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 import com.miguelcatalan.materialsearchview.MaterialSearchView;
 
 public class shopkeeperfirstpage extends AppCompatActivity
@@ -25,6 +29,7 @@ public class shopkeeperfirstpage extends AppCompatActivity
     private FirebaseAuth.AuthStateListener mAuthListener;
     private MaterialSearchView searchView;
     private RecyclerView itemlist;
+    private DatabaseReference mdatabase;
 
 
     @Override
@@ -33,6 +38,8 @@ public class shopkeeperfirstpage extends AppCompatActivity
         setContentView(R.layout.activity_shopkeeperfirstpage);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        mdatabase = FirebaseDatabase.getInstance().getReference().child("shop_details");
 
         itemlist = (RecyclerView) findViewById(R.id.item_list);
         itemlist.setHasFixedSize(true);
@@ -59,9 +66,62 @@ public class shopkeeperfirstpage extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+        FirebaseRecyclerAdapter<ItemShow,ItemHolder> firebaseRecyclerAdapter = new FirebaseRecyclerAdapter<ItemShow, ItemHolder>(
+                ItemShow.class,
+                R.layout.item_list,
+                ItemHolder.class,
+                mdatabase
+
+        ) {
+
+            @Override
+            protected void populateViewHolder(ItemHolder viewHolder, ItemShow model, int position) {
+                viewHolder.setItemName(model.getItemName());
+                viewHolder.setPrice(model.getItemPrice());
+                viewHolder.setDescription(model.getItemDescription());
+            }
+        };
+
+        itemlist.setAdapter(firebaseRecyclerAdapter);
     }
 
+    @Override
+    protected void onStart() {
+        super.onStart();
 
+    }
+
+    public static class ItemHolder extends RecyclerView.ViewHolder{
+
+        View mview;
+
+        public ItemHolder(View itemView) {
+            super(itemView);
+            mview = itemView;
+        }
+
+        public void setItemName(String name)
+        {
+            System.out.println("name"+name);
+            TextView item_n = (TextView) mview.findViewById(R.id.item_name);
+            item_n.setText(name);
+        }
+
+        public void setPrice(String price)
+        {
+            System.out.println("price"+price);
+            TextView item_p = (TextView) mview.findViewById(R.id.item_price);
+            item_p.setText(price);
+        }
+
+        public void setDescription(String desc)
+        {
+            System.out.println("desc"+desc);
+            TextView item_d = (TextView) mview.findViewById(R.id.item_description);
+            item_d.setText(desc);
+        }
+    }
 
     @Override
     public void onBackPressed() {

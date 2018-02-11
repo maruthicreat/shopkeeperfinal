@@ -12,7 +12,8 @@
             android:id="@+id/item_image"
             android:layout_width="match_parent"
             android:layout_height="295dp"
-            android:src="@drawable/addimage_min" />
+            android:src="@drawable/addimage_min"
+            android:contentDescription="@string/todo" />
 
         <TextView
             android:id="@+id/item_name"
@@ -20,7 +21,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:padding="10dp"
-            android:text="Item Name"
+            android:text="@string/item_name"
             android:textSize="18sp"
             android:textStyle="bold" />
 
@@ -30,7 +31,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:padding="10dp"
-            android:text="Item Price"
+            android:text="@string/item_price"
             android:textSize="24sp"
             android:textStyle="bold" />
 
@@ -40,7 +41,7 @@
             android:layout_height="165dp"
             android:layout_margin="10dp"
             android:padding="10dp"
-            android:text="Itme discription" />
+            android:text="@string/itme_discription" />
 
 
     </LinearLayout>
