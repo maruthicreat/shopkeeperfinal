@@ -3,54 +3,43 @@ package com.example.maruthiraja.shopkeeperapp;
 
 public class ItemShow {
 
-    private String item_description;
-    private String item_image;
-    private String item_name;
-    private String item_price;
+    private String title,description,image,price;
 
-    public ItemShow(){
-        System.out.println("none constructor");
+    public ItemShow() {
+        System.out.println("ok ok");
     }
 
-    public ItemShow(String itemDescription, String itemImage, String itemName, String itemPrice) {
-        this.item_description = itemDescription;
-        this.item_image = itemImage;
-        this.item_name = itemName;
-        this.item_price = itemPrice;
-        System.out.println("full constructor");
+    public String getTitle() {
+        return title;
     }
 
-    private String itemPrice;
-
-    public String getItemDescription() {
-        return item_description;
+    public void setTitle(String title) {
+        this.title = title;
     }
 
-    public void setItemDescription(String itemDescription) {
-        this.item_description = itemDescription;
+    public String getDescription() {
+        return description;
     }
 
-    public String getItemImage() {
-        return item_image;
+    public void setDescription(String description) {
+        this.description = description;
     }
 
-    public void setItemImage(String itemImage) {
-        this.item_image = itemImage;
+    public String getImage() {
+        return image;
     }
 
-    public String getItemName() {
-        return item_name;
+    public void setImage(String image) {
+        this.image = image;
     }
 
-    public void setItemName(String itemName) {
-        this.item_name = itemName;
+    public String getPrice() {
+        return price;
     }
 
-    public String getItemPrice() {
-        return item_price;
+    public void setPrice(String price) {
+        this.price = price;
     }
 
-    public void setItemPrice(String itemPrice) {
-        this.item_price = itemPrice;
-    }
+
 }

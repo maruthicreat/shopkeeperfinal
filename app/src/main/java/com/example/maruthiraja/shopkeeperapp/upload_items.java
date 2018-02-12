@@ -66,17 +66,18 @@ public class upload_items extends AppCompatActivity {
                         public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
                             Uri downloadUrl = taskSnapshot.getDownloadUrl();
                             DatabaseReference newpath = mdatabase.push();
-                            newpath.child("item_name").setValue(item);
-                            newpath.child("item_price").setValue(price);
-                            newpath.child("item_description").setValue(discrip);
-                            newpath.child("item_image").setValue(downloadUrl.toString());
-                            newpath.child("shop_id").setValue(FirebaseAuth.getInstance().getCurrentUser().toString());
+                            newpath.child("title").setValue(item);
+                            newpath.child("price").setValue(price);
+                            newpath.child("description").setValue(discrip);
+                            newpath.child("image").setValue(downloadUrl.toString());
+                            newpath.child("id").setValue(FirebaseAuth.getInstance().getCurrentUser().toString());
                             mprograss.dismiss();
                             Toast.makeText(upload_items.this, "Upload successfull...!!!", Toast.LENGTH_SHORT).show();
                         }
                     }).addOnFailureListener(new OnFailureListener() {
                         @Override
                         public void onFailure(@NonNull Exception e) {
+                            mprograss.dismiss();
                             Toast.makeText(upload_items.this, "Upload failed...!!!", Toast.LENGTH_SHORT).show();
                         }
                     });

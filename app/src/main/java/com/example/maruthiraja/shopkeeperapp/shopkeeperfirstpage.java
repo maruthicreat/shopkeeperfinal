@@ -14,6 +14,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
@@ -21,6 +22,7 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.miguelcatalan.materialsearchview.MaterialSearchView;
+import com.squareup.picasso.Picasso;
 
 public class shopkeeperfirstpage extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -77,9 +79,10 @@ public class shopkeeperfirstpage extends AppCompatActivity
 
             @Override
             protected void populateViewHolder(ItemHolder viewHolder, ItemShow model, int position) {
-                viewHolder.setItemName(model.getItemName());
-                viewHolder.setPrice(model.getItemPrice());
-                viewHolder.setDescription(model.getItemDescription());
+                viewHolder.setItemName(model.getTitle());
+                viewHolder.setPrice(model.getPrice());
+                viewHolder.setDescription(model.getDescription());
+                viewHolder.setImage(model.getImage());
             }
         };
 
@@ -120,6 +123,15 @@ public class shopkeeperfirstpage extends AppCompatActivity
             System.out.println("desc"+desc);
             TextView item_d = (TextView) mview.findViewById(R.id.item_description);
             item_d.setText(desc);
+        }
+
+        public void setImage(String image)
+        {
+            System.out.println("image"+image);
+            ImageView imageView = (ImageView) mview.findViewById(R.id.item_image);
+            Picasso.with(mview.getContext())
+                    .load(image)
+                    .into(imageView);
         }
     }
 
