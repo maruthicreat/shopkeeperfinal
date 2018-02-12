@@ -3,11 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://C:\Users\MCA\AndroidStudioProjects\shopkeeperapplication\app\app.iml" filepath="C:\Users\MCA\AndroidStudioProjects\shopkeeperapplication\app\app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/shopkeeperapp.iml" filepath="$PROJECT_DIR$/shopkeeperapp.iml" />
+      <module fileurl="file://C:\Users\maruthi raja\AndroidStudioProjects\shopkeeperapplication\app\app.iml" filepath="C:\Users\maruthi raja\AndroidStudioProjects\shopkeeperapplication\app\app.iml" />
       <module fileurl="file://C:\Users\maruthi raja\AndroidStudioProjects\shopkeeperapplication\shopkeeperapp.iml" filepath="C:\Users\maruthi raja\AndroidStudioProjects\shopkeeperapplication\shopkeeperapp.iml" />
-      <module fileurl="file://C:\Users\maruthiraja\AndroidStudioProjects\shopkeeperapp\shopkeeperapplication.iml" filepath="C:\Users\maruthiraja\AndroidStudioProjects\shopkeeperapp\shopkeeperapplication.iml" />
-      <module fileurl="file://C:\Users\MCA\AndroidStudioProjects\shopkeeperapplication\shopkeeperapplication.iml" filepath="C:\Users\MCA\AndroidStudioProjects\shopkeeperapplication\shopkeeperapplication.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shopkeeperapplication.iml" filepath="$PROJECT_DIR$/shopkeeperapplication.iml" />
     </modules>
   </component>
 </project>

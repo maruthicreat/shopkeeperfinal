@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "988450907717-i4g09o95odc1rglb8u31ph2qr2dij4r4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.maruthiraja.shopkeeperapp",
+            "certificate_hash": "6882e4f2fbfd0988cfe8fc712b76eda312cf4036"
+          }
+        },
+        {
           "client_id": "988450907717-7kph5dg66t0fp43f04ro8qk4qbd8l60a.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
@@ -28,6 +36,50 @@
           "android_info": {
             "package_name": "com.example.maruthiraja.shopkeeperapp",
             "certificate_hash": "1c1c931ea8213506632e206c903fd8fbabb5c441"
+          }
+        },
+        {
+          "client_id": "988450907717-p90onrb1crsohvhbm1ugft4241bkn41n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCFEGIO8YGOWCrmGt9G6AhxHyN8NDAovyg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "988450907717-p90onrb1crsohvhbm1ugft4241bkn41n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:988450907717:android:791e9dd1b72a8471",
+        "android_client_info": {
+          "package_name": "com.example.maruthiraja.firebaserecycler"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "988450907717-mslr6o8kvtab093s7a5mt211qrmvh5tl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.maruthiraja.firebaserecycler",
+            "certificate_hash": "9bf0ed489d1babb86f778c1342cf2541a59ada6a"
           }
         },
         {
