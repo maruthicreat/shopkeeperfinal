@@ -27,4 +27,7 @@
     <string name="shop_type">SHOP TYPE</string>
     <string name="map">MAP</string>
     <string name="select_your_shop_on_the_map">Select Your Shop on the Map</string>
+    <string name="item_name">Item Name</string>
+    <string name="item_price">Item Price</string>
+    <string name="itme_discription">Itme discription</string>
 </resources>
