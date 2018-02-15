@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">smart shopping</string>
+    <string name="app_name">Shopkeeper</string>
     <string name="customer">Customer</string>
     <string name="shopkeeper">shopkeeper</string>
     <string name="cussignup">customersignup</string>
@@ -30,4 +30,5 @@
     <string name="item_name">Item Name</string>
     <string name="item_price">Item Price</string>
     <string name="itme_discription">Itme discription</string>
+    <string name="title_activity_maps">Map</string>
 </resources>
